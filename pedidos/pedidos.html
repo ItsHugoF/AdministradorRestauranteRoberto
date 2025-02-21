@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+  <link rel="icon" href="../imagenes/login.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <img id="logo-menu" src="../imagenes/logo.webp" alt="Logo">
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pedidos/pedidos.html" class="active">Pedidos</a></li>
+        <li><a href="../reservas/reservas.html">Reservas</a></li>
+        <a id="iconoLogin"><img src="../imagenes/login.png" alt="Login"></a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido">
+    <!-- Contenedor principal para pedidos -->
+    <div class="contenedor">
+      <h2>Mis Pedidos</h2>
+
+      <!-- Ejemplo de tabla (puedes cambiarla por tarjetas o la estructura que prefieras) -->
+      <table class="tabla-pedidos">
+        <thead>
+          <tr>
+            <th>ID Pedido</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Ejemplo de filas -->
+          <tr>
+            <td>001</td>
+            <td>Usuario123</td>
+            <td>2025-02-21</td>
+            <td>Pendiente</td>
+            <td>
+              <button class="btn aceptar">Aceptar</button>
+              <button class="btn rechazar">Rechazar</button>
+            </td>
+          </tr>
+          <!-- Más filas dinámicas aquí -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

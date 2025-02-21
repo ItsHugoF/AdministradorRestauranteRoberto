@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio Administración</title>
+  <link rel="icon" href="../imagenes/login.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado con logo y menú -->
+  <header class="cabecera">
+    <img id="logo-menu" src="imagenes/logo.webp" alt="Logo Kanboard" />
+    <nav>
+      <ul class="menu">
+        <li><a href="#" class="active">Inicio</a></li>
+        <a id="iconoLogin">
+          <img src="imagenes/login.png" alt="Login" />
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="contenido">
+
+    <!-- Tarjetas que actúan como botones (Pedidos, Reservas) -->
+    <div class="tarjetas-acciones">
+      <div class="tarjeta" onclick="window.location.href='pedidos/pedidos.html'">
+        <h2>Pedidos</h2>
+        <p>Gestiona los pedidos realizados por los clientes.</p>
+      </div>
+
+      <div class="tarjeta" onclick="window.location.href='reservas/reservas.html'">
+        <h2>Reservas</h2>
+        <p>Administra las reservas de mesas en el local.</p>
+      </div>
+    </div>
+
+    <!-- Botón para ir a la parte de Catering -->
+    <div class="contenedor btn-catering">
+      <button onclick="window.location.href='catering.html'">
+        Ir a Catering
+      </button>
+    </div>
+
+  </div>
+</body>
+</html>

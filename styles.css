@@ -1,0 +1,190 @@
+/* -------------------------- */
+/* Fuente opcional (Staatliches) */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo general */
+body {
+  font-family: 'Staatliches', sans-serif;
+  background-color: #fff; /* Fondo blanco */
+  color: #000;           /* Texto negro */
+}
+
+/* Encabezado y menú de navegación */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #071952; /* Azul oscuro */
+  padding: 20px;
+}
+
+/* Logo en el header */
+#logo-menu {
+  height: 60px;
+  width: auto;
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu a {
+  color: #fff; /* Texto blanco en el menú */
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+
+.menu a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+/* Indicación de la página activa en el menú */
+.active {
+  border-bottom: 3px solid #fff;
+}
+
+/* Icono de login a la derecha */
+#iconoLogin img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Contenedor global donde se ubica el contenido principal */
+.contenido {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Tarjetas grandes en el landing */
+.tarjetas-acciones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Para que si es pequeño el ancho, se hagan saltos de línea */
+  gap: 20px;
+}
+
+.tarjeta {
+  background: #f9f9f9;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tarjeta h2 {
+  margin-bottom: 10px;
+  color: #071952; /* Azul oscuro para títulos */
+}
+
+.tarjeta p {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Contenedor interno para cada sección */
+.contenedor {
+  background: #f9f9f9; /* Un gris muy claro */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contenedor h2 {
+  margin-bottom: 20px;
+  color: #071952; /* Azul oscuro para títulos */
+}
+
+/* Tabla de pedidos/reservas */
+.tabla-pedidos {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  overflow-x: auto;
+}
+
+/* Estilo de cabecera de la tabla */
+.tabla-pedidos thead tr {
+  background-color: #071952;
+  color: #fff;
+}
+
+.tabla-pedidos th, .tabla-pedidos td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+/* Filas alternadas */
+.tabla-pedidos tbody tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+/* Botón general */
+button,
+.btn {
+  background-color: #071952; /* Azul oscuro por defecto */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover en botones */
+button:hover,
+.btn:hover {
+  background-color: #000; /* Pasa a negro */
+}
+
+/* Botones aceptar y rechazar (si quieres diferenciarlos) */
+.btn.aceptar {
+  background-color: #28a745; /* Verde */
+}
+.btn.aceptar:hover {
+  background-color: #1f7d37; /* Verde oscuro */
+}
+
+.btn.rechazar {
+  background-color: #dc3545; /* Rojo */
+}
+.btn.rechazar:hover {
+  background-color: #b52a36; /* Rojo oscuro */
+}
+
+/* Botón catering en la landing */
+.btn-catering {
+  text-align: center;
+}
+
+/* Ajustes responsivos si deseas */
+@media (max-width: 768px) {
+  .menu li {
+    margin-right: 15px;
+  }
+  .tarjeta {
+    width: 80%;
+  }
+}

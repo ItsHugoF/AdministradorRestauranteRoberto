@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas</title>
+  <link rel="icon" href="../imagenes/login.png" type="image/x-icon">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <img id="logo-menu" src="../imagenes/logo.webp" alt="Logo">
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pedidos/pedidos.html">Pedidos</a></li>
+        <li><a href="../reservas/reservas.html" class="active">Reservas</a></li>
+        <a id="iconoLogin"><img src="../imagenes/login.png" alt="Login"></a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido">
+    <div class="contenedor">
+      <h2>Reservas de Mesas</h2>
+
+      <table class="tabla-pedidos">
+        <thead>
+          <tr>
+            <th>ID Reserva</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Ejemplo de filas -->
+          <tr>
+            <td>R-101</td>
+            <td>UsuarioMesa</td>
+            <td>2025-03-10</td>
+            <td>20:00</td>
+            <td>
+              <button class="btn aceptar">Aceptar</button>
+              <button class="btn rechazar">Rechazar</button>
+            </td>
+          </tr>
+          <!-- Más filas dinámicas aquí -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
