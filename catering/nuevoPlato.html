@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo plato</title>
+    <link rel="stylesheet" href="nuevoPlato.css">
+</head>
+<body>
+    <header>
+        <h1>Nuevo Plato</h1>
+        <button id="backBtn">Volver atrás</button>
+      </header>
+      <main>
+        <form id="nuevoPlatoForm">
+          <label for="nombre">Nombre del plato:</label>
+          <input type="text" id="nombre" placeholder="Ej: Pizza Margarita" required>
+    
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" placeholder="Ej: 12.50" required step="0.01">
+    
+          <label for="url_imagen">URL de la imagen:</label>
+          <input type="text" id="url_imagen" placeholder="Link de la imagen" required>
+    
+          <button type="submit">Añadir Plato</button>
+        </form>
+      </main>
+      <script src="nuevoPlato.js"></script>
+</body>
+</html>
+

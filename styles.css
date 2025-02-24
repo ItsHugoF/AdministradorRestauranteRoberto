@@ -151,6 +151,7 @@ button,
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Staatliches';
 }
 
 /* Hover en botones */
@@ -177,6 +178,8 @@ button:hover,
 /* Botón catering en la landing */
 .btn-catering {
   text-align: center;
+  font-family: 'Staatliches';
+
 }
 
 /* Ajustes responsivos si deseas */

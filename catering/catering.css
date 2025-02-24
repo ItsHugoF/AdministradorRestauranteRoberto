@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, button, input, label {
+    font-family: 'Staatliches', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #071952; 
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header button {
+    background-color: #071952; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+
+}
+
+header button:hover {
+    background-color: #000; 
+}
+
+main {
+    padding: 20px;
+}
+
+
+.alimento {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.alimento img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.alimento-info {
+    flex-grow: 1;
+}
+
+.alimento-info h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #071952;
+}
+
+.alimento-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #071952; 
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: red;
+}
