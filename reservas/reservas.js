@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           tdAcciones.appendChild(btnAceptar);
           tdAcciones.appendChild(btnRechazar);
 
-          if (pedido.estado === "aceptado") {
+          if (reserva.estado === "aceptado") {
             const btnCompletar = document.createElement("button");
             btnCompletar.classList.add("btn");
             btnCompletar.textContent = "Completar";
