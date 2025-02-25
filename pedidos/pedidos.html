@@ -15,6 +15,7 @@
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../pedidos/pedidos.html" class="active">Pedidos</a></li>
         <li><a href="../reservas/reservas.html">Reservas</a></li>
+        <li><a href="../mesas/mesas.html">Mesas</a></li>
         <a id="iconoLogin"><img src="../imagenes/login.png" alt="Login"></a>
       </ul>
     </nav>
@@ -26,32 +27,22 @@
       <h2>Mis Pedidos</h2>
 
       <!-- Ejemplo de tabla (puedes cambiarla por tarjetas o la estructura que prefieras) -->
-      <table class="tabla-pedidos">
+      <table class="tabla-pedidos" id="tablaPedidos">
         <thead>
           <tr>
             <th>ID Pedido</th>
             <th>Cliente</th>
-            <th>Fecha</th>
             <th>Estado</th>
             <th>Acciones</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- Ejemplo de filas -->
-          <tr>
-            <td>001</td>
-            <td>Usuario123</td>
-            <td>2025-02-21</td>
-            <td>Pendiente</td>
-            <td>
-              <button class="btn aceptar">Aceptar</button>
-              <button class="btn rechazar">Rechazar</button>
-            </td>
-          </tr>
-          <!-- Más filas dinámicas aquí -->
+        <tbody id="tbody-pedidos">
+          <!-- Filas dinámicas aquí -->
         </tbody>
       </table>
     </div>
   </div>
+
+  <script src="pedidos.js"></script>
 </body>
 </html>

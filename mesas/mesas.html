@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas</title>
+    <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+    <header class="cabecera">
+        <img id="logo-menu" src="../imagenes/logo.webp" alt="Logo">
+        <nav>
+          <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pedidos/pedidos.html">Pedidos</a></li>
+            <li><a href="../reservas/reservas.html">Reservas</a></li>
+            <!-- Ancla a Mesas con 'active' -->
+            <li><a href="./mesas.html" class="active">Mesas</a></li>
+            <a id="iconoLogin"><img src="../imagenes/login.png" alt="Login"></a>
+          </ul>
+        </nav>
+      </header>
+    
+      <div class="contenido">
+        <div class="contenedor">
+          <h2>Listado de Mesas</h2>
+          <table class="tabla-pedidos">
+            <thead>
+              <tr>
+                <th>ID Mesa</th>
+                <th>Estado (Libre / Ocupada)</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-mesas">
+              <!-- Filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="contenedor">
+          <h2>Crear Nueva Mesa</h2>
+          <form id="formCrearMesa">
+            <label for="campoId">ID de la mesa</label><br>
+            <input type="number" id="campoId" required>
+            <br><br>
+            <button type="submit" class="btn">Crear Mesa</button>
+          </form>
+        </div>
+      </div>
+    
+      <script src="mesas.js"></script>
+</body>
+</html>
