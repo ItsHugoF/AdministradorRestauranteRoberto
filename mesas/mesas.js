@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarMesas();
 
   function cargarMesas() {
-    fetch("http://localhost:5000/api/admin/mesas")
+    fetch("https://api-restaurante-robert-sand.vercel.app/api/admin/mesas")
       .then((res) => res.json())
       .then((mesas) => {
         tbodyMesas.innerHTML = "";
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function eliminarMesa(idMesa) {
     if (!confirm("¿Deseas eliminar esta mesa?")) return;
 
-    fetch(`http://localhost:5000/api/admin/mesas/${idMesa}`, {
+    fetch(`https://api-restaurante-robert-sand.vercel.app/api/admin/mesas/${idMesa}`, {
       method: "DELETE"
     })
       .then((res) => res.json())
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: parseInt(campoId.value) //Creams con estado true por defecto
     };
 
-    fetch("http://localhost:5000/api/admin/mesas", {
+    fetch("https://api-restaurante-robert-sand.vercel.app/api/admin/mesas", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(nuevaMesa)

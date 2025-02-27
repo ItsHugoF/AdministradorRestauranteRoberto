@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(nuevoPlato);
 
         try {
-            const response = await fetch('http://localhost:3000/api/crearPlato', {
+            const response = await fetch('https://api-restaurante-robert-sand.vercel.app/api/crearPlato', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

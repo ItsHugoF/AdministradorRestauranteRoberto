@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarReservas();
 
   function cargarReservas() {
-    fetch("http://localhost:5000/api/admin/reservas")
+    fetch("https://api-restaurante-robert-sand.vercel.app/api/admin/reservas")
       .then((response) => response.json())
       .then((reservas) => {
         tbodyReservas.innerHTML = "";
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function actualizarEstadoReserva(reservaId, nuevoEstado) 
   {
-    fetch(`http://localhost:5000/api/admin/reservas/${reservaId}`, {
+    fetch(`https://api-restaurante-robert-sand.vercel.app/api/admin/reservas/${reservaId}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ estado: nuevoEstado }),
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   function completarReserva(reservaId) {
-    fetch(`http://localhost:5000/api/admin/reservas/${reservaId}`, {
+    fetch(`https://api-restaurante-robert-sand.vercel.app/api/admin/reservas/${reservaId}`, {
       method: "DELETE"
     })
     .then(res => res.json())

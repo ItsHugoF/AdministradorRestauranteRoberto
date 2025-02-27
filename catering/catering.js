@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function cargarAlimentos() {
-        fetch('http://localhost:3000/api/obtenerPlatos')
+        fetch('https://api-restaurante-robert-sand.vercel.app/api/obtenerPlatos')
             .then(response => response.json())
             .then(data => {
                 const contenedor = document.getElementById('alimentos');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     deleteBtn.textContent = 'X';
                     deleteBtn.addEventListener('click', () => {
                         if (confirm(`¿Desea eliminar el plato ${plato.nombre}?`)) {
-                            fetch(`http://localhost:3000/api/eliminarPlato/${plato.nombre}`, {
+                            fetch(`https://api-restaurante-robert-sand.vercel.app/api/eliminarPlato/${plato.nombre}`, {
                                 method: 'DELETE'
                             })
                                 .then(response => response.json())
